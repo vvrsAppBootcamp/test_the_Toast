@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75sp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="showToast"
+        android:text="@string/toast"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/button_toast"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFFF00"
+        android:gravity="center_vertical"
+        android:onClick="countUp"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="160sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_countUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/show_count"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_light"
+        android:onClick="countUp"
+        android:text="@string/count"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/button_countDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/button_countUp"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/count_down"
+        android:textColor="@android:color/white"
+        android:onClick="countDown"/>
+    <Button
+        android:id="@+id/button_Zero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/button_countDown"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/zero"
+        android:textColor="@android:color/white"
+        android:onClick="countDown"/>
+
+</RelativeLayout>
