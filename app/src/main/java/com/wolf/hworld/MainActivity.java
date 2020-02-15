@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             mShowCount.setText(Integer.toString(mCount));
     }
 
-    public void countDown(View view){
+    public void Zero(View view){
         Button button = (Button) findViewById(R.id.button_Zero);
         mCount = 0;
         if(mShowCount != null)
